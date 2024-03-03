@@ -8,11 +8,11 @@ https://start.spring.io/
 server.port = 8091 //8091是我人为规定的新端口
 
 4.	pom.xml添加依赖dependency。3.0以上springboot切勿使用springfox和springfox UI，否则会有null pointer或者 TypeNotPresentException.
-<dependency>
-   <groupId>org.springdoc</groupId>
-   <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-   <version>2.3.0</version>
-</dependency>
+  <dependency>
+     <groupId>org.springdoc</groupId>
+     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+     <version>2.3.0</version>
+  </dependency>
 
 5.	新建config包，创建SwaggerConfig类
 The Swagger UI page will then be available at http://localhost:8091/swagger-ui/index.html
